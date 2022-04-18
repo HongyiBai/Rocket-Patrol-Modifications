@@ -26,7 +26,7 @@ class Menu extends Phaser.Scene {
         this.add.tileSprite(0, 0, 640, 480, 'startBg').setOrigin(0, 0).setScale(1, game.config.height / 382);
 
         this.add.text(game.config.width/2, game.config.height/2 - borderUISize - borderPadding, 'ROCKET PATROL', menuConfig).setOrigin(0.5);
-        this.add.text(game.config.width/2, game.config.height/2 , 'use mouse to move and click mouse to fire', { ...menuConfig, fontSize: '24px' }).setOrigin(0.5);
+        this.add.text(game.config.width/2, game.config.height/2 , 'Use mouse to move and click mouse to fire', { ...menuConfig, fontSize: '24px' }).setOrigin(0.5);
         menuConfig.backgroundColor = '#80FF00';
         menuConfig.color = '#000';
         this.add.text(game.config.width/2, game.config.height/2 + borderUISize + borderPadding, 'Press <- for Novice or -> Expert', menuConfig).setOrigin(0.5);
