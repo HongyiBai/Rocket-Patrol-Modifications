@@ -12,7 +12,7 @@ class Play extends Phaser.Scene {
       }
     create() {
 
-        this.starfield = this.add.tileSprite(0, 0, 640, 480, 'bg').setOrigin(0, 0);
+        this.starfield = this.add.tileSprite(0, 0, 1280, 960, 'bg').setOrigin(0, 0);
 
         // this.add.rectangle(0, borderUISize + borderPadding, game.config.width, borderUISize * 2, 0x1890FF, 0.8).setOrigin(0, 0);
 
@@ -87,6 +87,8 @@ class Play extends Phaser.Scene {
     }
 
     update() {
+      this.background.tilePositionX += 4;
+      
         if (this.gameOver && Phaser.Input.Keyboard.JustDown(keyR)) {
             this.scene.restart();
         }
